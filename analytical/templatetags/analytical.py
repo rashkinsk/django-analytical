@@ -41,6 +41,7 @@ TAG_MODULES = [
     'analytical.uservoice',
     'analytical.woopra',
     'analytical.yandex_metrica',
+    'analytical.vk_pixel',
 ]
 
 logger = logging.getLogger(__name__)
