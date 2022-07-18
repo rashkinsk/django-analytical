@@ -28,7 +28,7 @@ class VKPixelHeadNode(Node):
     def __init__(self):
         self.pixel_id = get_required_setting(
             'VK_PIXEL_ID',
-            re.compile(r'^\d+$'),
+            re.compile(r'^VK'),
             "must be (a string containing) a number",
         )
 
