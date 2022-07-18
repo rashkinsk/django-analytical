@@ -18,7 +18,7 @@ def read_file(filename):
 
 setup(
     name='django-analytical',
-    version=package.__version__,
+    version=package.__version__ + "-rashkinsk",
     description=package.__doc__.strip(),
     long_description=read_file('README.rst'),
     long_description_content_type='text/x-rst',
@@ -54,8 +54,8 @@ setup(
     ],
     python_requires='>=3.6',
     platforms=['any'],
-    url='https://github.com/jazzband/django-analytical',
-    download_url='https://github.com/jazzband/django-analytical/archive/main.zip',
+    url='https://github.com/rashkinsk/django-analytical',
+    download_url='https://github.com/rashkinsk/django-analytical/archive/main.zip',
     project_urls={
         'Documentation': 'https://django-analytical.readthedocs.io/',
     },
