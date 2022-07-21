@@ -5,12 +5,7 @@ from django.template import Library, Node
 from analytical.utils import get_required_setting, is_internal_ip, disable_html
 
 VK_PIXEL_HEAD_CODE = """\
-<script type="text/javascript">
-!function(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src='https://vk.com/js/api/openapi.js?169',t.onload=function(){VK.Retargeting.Init('%(VK_PIXEL_ID)s'),VK.Retargeting.Hit()},document.head.appendChild(t)}();
-</script>
-<noscript>
-<img src='https://vk.com/rtrg?p=%(VK_PIXEL_ID)s' style="position:fixed; left:-999px;" alt=""/>
-</noscript>
+<script type="text/javascript">!function(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src='https://vk.com/js/api/openapi.js?169',t.onload=function(){VK.Retargeting.Init("%(VK_PIXEL_ID)s"),VK.Retargeting.Hit()},document.head.appendChild(t)}();</script><noscript><img src="https://vk.com/rtrg?p=%(VK_PIXEL_ID)s" style="position:fixed; left:-999px;" alt=""/></noscript>
 """
 
 register = Library()
